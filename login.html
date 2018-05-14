@@ -1,0 +1,66 @@
+<!DOC TYPE HTML> 
+<html ng-app="myApp"> 
+<head>
+<meta charset="UTF-8"/>
+<html lang="en"> 
+<meta name="description" content="> 
+<meta name="keywords">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login</title> 
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/> 
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/login.css"/>
+    <script src="js/html5shiv.min.js"></script>  
+      <script src="js/respond.min.js"></script>  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+      <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	 <script type="text/javascript" src="angular/angular.min.js"></script>
+	 <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+   <a id="logo" href="#"> <img class="hvr-pulse-grow" src="open.png" height="100" width="100" > </a>
+  <nav>
+    <ul>
+      <li class="l1"><a href="home.html" style="text-decoration:none" >Home</a></li>
+      <li class="l2"><a href="" style="text-decoration:none" >Sections</a></li>
+      <li class="l3"><a href="#" style="text-decoration:none">About</a></li>
+       <li class="l4"><a href="register.html" style="text-decoration:none">Register</a></li>
+      <li class="l5"><a href="login.html" style="text-decoration:none" >Signin</a></li>
+      <li class="l6"><a href="#" style="text-decoration:none">Contact</a></li>
+      
+    </ul>
+  </nav>
+  
+</header>
+    <br><br>
+    <div class="st">
+        <img class="st1" src="student.png" height="370" width="370">
+        <p class="bubble thought"> HELLO..!</p>
+    </div>
+    
+    <div class="login" ng-controller="myctr" >
+	<h1>Login</h1>
+    <form method="post">
+       
+    	<input type="text"  placeholder="Username" ng-model="email" />
+        <h4>{{email}}</h4>
+		<input type="password"  placeholder="Password" ng-model="password"  />
+		<h4>{{password}}</h4>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    </form>
+</div>
+    </body>
+    </html>
